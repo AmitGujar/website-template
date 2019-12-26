@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback</title>
+    <!-- icons  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- bootstrap styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- bootstrap.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- navbar styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../libs/styles/navbar.css" />
+
+    <script src="../lib/scripts/navbar.js"></script>
+
+    <link rel="stylesheet" href="/feedback/style.css">
+</head>
+
+<body>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark" id="navbar">
+        <a class="navbar-brand" href="#">Spark Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../home/index.html"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about"><b>About</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../courses/index.html"><b>Courses</b></a>
+                </li>
+                <!-- dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><b style="color: white;">More</b></a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../login/index.html">Log in</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar ended -->
+    <div class="container">
+        <section class="mb-4">
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">What do you think about us ?</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Spicy jalapeno bacon ipsum dolor amet short loin strip
+                steak frankfurter rump bresaola landjaeger. Pork loin landjaeger tail, doner spare ribs chicken swine
+                flank buffalo short loin chuck pork cupim brisket. Flank doner meatball pancetta brisket burgdoggen.
+                Venison hamburger bacon pastrami flank tongue.</p>
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-7 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <!--Grid row-->
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="name" class="">Your name</label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+
+                                </div>
+                            </div>
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="email" class="">Your email</label>
+                                    <input type="text" id="email" name="email" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="subject" class="">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <label for="message">Your message</label>
+                                    <textarea type="text" id="message" name="message" rows="5"
+                                        class="form-control md-textarea"></textarea>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary">Submit</a>
+                        </div>
+                    </form>
+                </div>
+                <!--Grid column-->
+                <div class="col-md-5 text-center">
+                    <img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/feedback_h2ft.svg"
+                        alt="load error" height="100%" width="100%">
+                </div>
+            </div>
+        </section>
+    </div><br><br><br>
+</body>
+
+</html>
